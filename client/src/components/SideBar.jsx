@@ -33,7 +33,7 @@ const SideBar = () => {
                 },
               };
     
-            const { data } = await axios.get(`http://localhost:3001/api/user?search=${search}`, config);
+            const { data } = await axios.get(`https://my-chat-f28w.onrender.com/api/user?search=${search}`, config);
     
             setLoading(false)
     
@@ -57,7 +57,7 @@ const SideBar = () => {
                     Authorization: `Bearer ${user.token}`,
                 }
             }
-            const { data } = await axios.post(`http://localhost:3001/api/chat`, { userId }, config);
+            const { data } = await axios.post(`https://my-chat-f28w.onrender.com/api/chat`, { userId }, config);
 
             if (!chats.find((c) => c._id === data._id)) setChats([data, ...chats]);
             setSelectedChat(data);

@@ -21,7 +21,7 @@ const MyChats = ({ fetchAgain }) => {
         },
       };
 
-      const { data } = await axios.get("http://localhost:3001/api/chat", config);
+      const { data } = await axios.get("https://my-chat-f28w.onrender.com/api/chat", config);
       setChats(data);
 
       setAllUsers(data)
