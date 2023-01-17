@@ -49,7 +49,7 @@ const Login = () => {
         value={email}
         onChange={e => setEmail(e.target.value)}
         required
-        type="text" placeholder='username' className='mb-3 font-poppins text-xl border px-4 py-2 rounded-md' />
+        type="text" placeholder='username' className='mb-3 font-poppins border px-4 py-2 rounded-md' />
         <label className='py-3 text-xl font-poppins'>Password</label>
         <input 
 				value={password}
@@ -57,7 +57,7 @@ const Login = () => {
         required
         type="password" 
         placeholder='password' 
-        className='mb-3 font-poppins text-xl border px-4 py-2 rounded-md' />
+        className='mb-3 font-poppins border px-4 py-2 rounded-md' />
         <button type="submit" className='bg-blue-500 hover:bg-blue-600 py-2 rounded-md text-white text-xl font-poppins uppercase hover:scale-105'>Login</button>
       </form>
 </div>

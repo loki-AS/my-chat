@@ -78,7 +78,7 @@ const SignUp = () => {
         <input 
         type="input"
         placeholder='name..'
-        className='py-2 px-4 text-lg font-poppins rounded-md'
+        className='py-2 px-4 font-poppins rounded-md'
         onChange={(e) => setName(e.target.value)}
         required
         />
@@ -87,7 +87,7 @@ const SignUp = () => {
         <input 
         type="input"
         placeholder='email..'
-        className='py-2 px-4 text-lg font-poppins rounded-md'
+        className='py-2 px-4 font-poppins rounded-md'
         onChange={(e) => setEmail(e.target.value)}
         required
         />
@@ -96,7 +96,7 @@ const SignUp = () => {
         <input 
         type="password"
         placeholder='password..'
-        className='py-2 px-4 text-lg font-poppins rounded-md'
+        className='py-2 px-4 font-poppins rounded-md'
         onChange={(e) => setPassword(e.target.value)}
         required
         /> 
@@ -104,7 +104,7 @@ const SignUp = () => {
         <label className='font-poppins py-3 text-xl'>Image</label>
         <input 
         type="file"
-        className='w-64 text-lg font-poppins truncate rounded-md lg:w-full'
+        className='w-64 font-poppins truncate rounded-md lg:w-full'
         onChange={(e) => postDetails(e.target.files[0])}
         />
 
