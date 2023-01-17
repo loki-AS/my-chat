@@ -22,7 +22,7 @@ const SignUp = () => {
           "Content-type": "application/json",
         },
       }
-      const { data } = await axios.post("https://my-chat-f28w.onrender.com/api/user", {
+      const { data } = await axios.post("https://my-chat-2m39.onrender.com/api/user", {
         name,
         email,
         password,

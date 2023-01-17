@@ -12,7 +12,7 @@ import { useLottie } from "lottie-react";
 import Lottie from "lottie-react"
 import loadinganimi from "../config/loadinganimi.json"
 
-const ENDPOINT = "https://my-chat-f28w.onrender.com"
+const ENDPOINT = "https://my-chat-two.vercel.app"
 
 var socket, selectedChatCompare;
 
@@ -46,7 +46,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
           setLoading(true);
     
           const { data } = await axios.get(
-            `https://my-chat-f28w.onrender.com/api/message/${selectedChat._id}`,
+            `https://my-chat-2m39.onrender.com/api/message/${selectedChat._id}`,
             config
           );
 
@@ -81,7 +81,7 @@ const SingleChat = ({ fetchAgain, setFetchAgain }) => {
             };
             setNewMessage("");
             const { data } = await axios.post(
-              "https://my-chat-f28w.onrender.com/api/message",
+              "https://my-chat-2m39.onrender.com/api/message",
               {
                 content: newMessage,
                 chatId: selectedChat,
