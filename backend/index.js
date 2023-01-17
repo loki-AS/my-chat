@@ -10,7 +10,7 @@ dotenv.config();
 app.use(express.json());
 app.use(cors());
 
-mongoose.connect("mongodb+srv://loki:loki@cluster0.xertrmc.mongodb.net/mern-chat")
+mongoose.connect("mongodb+srv://@cluster0.xertrmc.mongodb.net/mern-chat")
 const connection = mongoose.connection;
 connection.once('open', () => {
   console.log("MongoDB database connection established successfully");
