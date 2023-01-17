@@ -12,7 +12,7 @@ import { useLottie } from "lottie-react";
 import Lottie from "lottie-react"
 import loadinganimi from "../config/loadinganimi.json"
 
-const ENDPOINT = "https://my-chat-two.vercel.app"
+const ENDPOINT = "https://my-chat-2m39.onrender.com"
 
 var socket, selectedChatCompare;
 
